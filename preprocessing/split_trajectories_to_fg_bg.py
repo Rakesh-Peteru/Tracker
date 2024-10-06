@@ -4,6 +4,8 @@ from torch.nn.functional import interpolate
 import numpy as np
 from PIL import Image
 import argparse
+import sys
+sys.path.append('/kaggle/working/Tracker/preprocessing')
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 def generate_start_end(trajectories):
