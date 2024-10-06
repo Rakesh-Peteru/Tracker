@@ -3,6 +3,8 @@ import os
 import torch
 import yaml
 from data.data_utils import load_video
+import sys
+sys.path.append('/kaggle/working/Tracker/preprocessing')
 from utils import add_config_paths, get_dino_features_video
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
