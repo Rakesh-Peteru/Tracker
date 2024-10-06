@@ -3,6 +3,8 @@ import subprocess
 import argparse
 import torch
 import yaml
+import sys
+sys.path.append('/kaggle/working/Tracker/preprocessing')
 from utils import add_config_paths
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
