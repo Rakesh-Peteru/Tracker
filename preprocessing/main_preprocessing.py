@@ -6,7 +6,7 @@ import yaml
 import sys
 sys.path.append('/kaggle/working/Tracker')
 
-from utils import add_config_paths
+from Tracker.utils import add_config_paths
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
